@@ -1,0 +1,305 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Poppins:wght@200;300;400;500;600&family=Titillium+Web:wght@200;300;400;600&display=swap');
+
+:root {
+    --font-size: 62.5%;
+    --text-color: #FFFFFF;
+    --font-family: 'Titillium Web', sans-serif;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size: var(--font-size);
+
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cars-website-yt.netlify.app/images/bg.png');
+    background-size: cover;
+    font-family: var(--font-family);
+}
+
+/*container start */
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+/*container end */
+
+/* header start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-bar ul {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar ul a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all .5s ease-in;
+    cursor: pointer;
+}
+
+.menu-bar ul a:hover {
+    --text-color: black;
+    color: var(--text-color);
+
+}
+
+/* header end */
+
+/*section start */
+
+.section {
+    display: flex;
+    height: 100vr;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+
+/*section end */
+
+
+/*aside start */
+
+.aside h1 {
+    color: var(--text-color);
+    font-size: 10rem;
+
+}
+
+.aside p {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.aside button {
+    --text-color: #000;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    padding: 1.2rem 2.4rem;
+    margin-top: 3rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.aside button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+
+}
+
+/*aside start */
+
+/*article start */
+
+article {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2.4rem;
+    column-gap: 4rem;
+    margin: 0rem 6.6rem;
+}
+
+
+.car-1 {
+    background-image: url('https://cars-website-yt.netlify.app/images/pic-1.png');
+    background-size: cover;
+    height: 23rem;
+    width: 20rem;
+    padding: 1.5rem 2.5rem;
+    box-sizing: border-box;
+    position: relative;
+    border: 0.1rem solid red;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+
+}
+
+.car-1:hover {
+    transform: translateY(-1rem);
+    border: 0.1rem solid white;
+}
+
+.car-view {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.6rem;
+    box-sizing: border-box;
+
+}
+
+.car-view h5 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.car-view p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.car-1 a {
+    position: absolute;
+    --text-color: #000;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    bottom: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.car-1 a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.car-2 {
+    background-image: url('https://cars-website-yt.netlify.app/images/pic-2.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 23rem;
+    width: 20rem;
+    padding: 1.5rem 2.5rem;
+    box-sizing: border-box;
+    position: relative;
+    border: 0.1rem solid red;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.car-2:hover {
+    transform: translateY(-1rem);
+    border: 0.1rem solid white;
+}
+
+.car-2 a {
+    position: absolute;
+    --text-color: #000;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    bottom: 1.5rem;
+}
+
+.car-2 a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.car-3 {
+    background-image: url('https://cars-website-yt.netlify.app/images/pic-3.png');
+    background-size: cover;
+    height: 23rem;
+    width: 20rem;
+    padding: 1.5rem 2.5rem;
+    box-sizing: border-box;
+    position: relative;
+    border: 0.1rem solid red;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.car-3:hover {
+    transform: translateY(-1rem);
+    border: 0.1rem solid white;
+}
+
+.car-3 a {
+    position: absolute;
+    --text-color: #000;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    bottom: 1.5rem;
+}
+
+.car-3 a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.car-4 {
+    background-image: url('https://cars-website-yt.netlify.app/images/pic-4.png');
+    background-size: cover;
+    height: 23rem;
+    width: 20rem;
+    padding: 1.5rem 2.5rem;
+    box-sizing: border-box;
+    position: relative;
+    border: 0.1rem solid red;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.car-4:hover {
+    transform: translateY(-1rem);
+    border: 0.1rem solid white;
+}
+
+.car-4 a {
+    position: absolute;
+    --text-color: #000;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    bottom: 1.5rem;
+}
+
+.car-4 a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+/*article end */
