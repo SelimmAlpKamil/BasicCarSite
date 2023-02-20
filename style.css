@@ -115,6 +115,7 @@ body {
     background-color: black;
     border: 1px solid white;
 
+
 }
 
 /*aside start */
@@ -303,3 +304,84 @@ article {
 }
 
 /*article end */
+
+/*Responsive start */
+
+
+@media (max-width:1000px) {
+    body {
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+
+    .container {
+        margin: auto;
+        width: 100%;
+    }
+
+    .menu-bar ul {
+        display: flex;
+        column-gap: 1rem;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-bar ul a {
+        font-size: 1rem;
+    }
+
+    .menu-bar ul a .bi-list {
+        display: none;
+    }
+
+
+
+    article {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.6rem;
+        column-gap: 2rem;
+        margin: 3rem 3rem;
+        justify-content: center;
+    }
+
+    .section {
+        display: block;
+    }
+
+    .aside {
+        margin: 3rem;
+    }
+
+    .aside h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .aside p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .aside button {
+        display: block;
+        width: 40%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/*Responsive end */
