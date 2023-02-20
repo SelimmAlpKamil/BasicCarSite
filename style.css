@@ -14,14 +14,13 @@
 
 html {
     font-size: var(--font-size);
-
-}
-
-body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cars-website-yt.netlify.app/images/bg.png');
     background-size: cover;
     font-family: var(--font-family);
+
 }
+
+body {}
 
 /*container start */
 
@@ -307,11 +306,11 @@ article {
 
 /*Responsive start */
 
-
 @media (max-width:1000px) {
     body {
         background-repeat: no-repeat;
-        height: auto;
+        background-size: cover;
+        height: 100%;
         width: 100%;
         margin: auto;
     }
@@ -336,8 +335,6 @@ article {
     .menu-bar ul a .bi-list {
         display: none;
     }
-
-
 
     article {
         display: grid;
@@ -374,14 +371,11 @@ article {
         font-size: 1rem;
     }
 
-
-
+    .car-4 {
+        margin-bottom: 10rem;
+    }
 
 }
-
-
-
-
 
 
 /*Responsive end */
