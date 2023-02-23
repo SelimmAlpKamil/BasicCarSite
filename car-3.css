@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Poppins:wght@200;300;400;500;600&family=Titillium+Web:wght@200;300;400;600&display=swap');
 
+
 :root {
     --font-size: 62.5%;
     --text-color: #FFFFFF;
@@ -80,9 +81,9 @@ body {
 
 .section {
     display: flex;
-    height: 100vr;
     align-items: center;
-    margin-top: 4rem;
+    margin-bottom: 10rem;
+
 
 }
 
@@ -90,6 +91,8 @@ body {
 
 
 /*aside start */
+
+
 
 .aside h1 {
     color: var(--text-color);
@@ -102,25 +105,11 @@ body {
     font-size: 1.6rem;
 }
 
-.aside button {
-    --text-color: #000;
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 1.2rem;
-    padding: 1.2rem 2.4rem;
-    margin-top: 3rem;
-    border: 1px solid red;
-    border-radius: 2rem;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: all .3s ease-in;
-}
-
-.aside button:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-
+.logo-img {
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
 
 }
 
@@ -130,26 +119,71 @@ body {
 
 article {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     gap: 2.4rem;
     column-gap: 4rem;
     margin: 0rem 6.6rem;
+
+
 }
 
 
 .car-1 {
-    background-image: url('https://cars-website-yt.netlify.app/images/pic-1.png');
-    background-size: cover;
-    height: 23rem;
-    width: 20rem;
-    padding: 1.5rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 28rem;
+    width: 32rem;
     box-sizing: border-box;
-    position: relative;
     border: 0.1rem solid red;
     border-radius: 1rem;
     transition: all 0.3s ease-in;
+}
+
+
+
+
+.car-view img {
+    display: block;
+    margin: auto;
+    height: 10rem;
+    object-fit: contain;
 
 }
+
+.speed {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: var(--text-color);
+    gap: 1rem;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.fuel {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: var(--text-color);
+    font-size: 2rem;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.price {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: var(--text-color);
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+    align-items: center;
+}
+
+
+
 
 .car-1:hover {
     transform: translateY(-1rem);
@@ -157,156 +191,25 @@ article {
 }
 
 .car-view {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.6rem;
+
+    padding: 2.3rem;
     box-sizing: border-box;
+    justify-content: center;
+
 
 }
 
 .car-view h5 {
-    font-size: 1.3rem;
+    font-size: 3rem;
     color: var(--text-color);
+    text-align: center;
 }
 
 .car-view p {
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--text-color);
-}
-
-.car-1 a {
-    position: absolute;
-    --text-color: #000;
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1.2rem 2.4rem;
-    border: 1px solid red;
-    box-sizing: border-box;
-    border-radius: 2rem;
-    bottom: 1.5rem;
-    transition: all 0.3s ease-in;
-}
-
-.car-1 a:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-}
-
-.car-2 {
-    background-image: url('https://cars-website-yt.netlify.app/images/pic-2.png');
-    background-size: cover;
-    background-position: bottom;
-    height: 23rem;
-    width: 20rem;
-    padding: 1.5rem 2.5rem;
-    box-sizing: border-box;
-    position: relative;
-    border: 0.1rem solid red;
-    border-radius: 1rem;
-    transition: all 0.3s ease-in;
-}
-
-.car-2:hover {
-    transform: translateY(-1rem);
-    border: 0.1rem solid white;
-}
-
-.car-2 a {
-    position: absolute;
-    --text-color: #000;
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1.2rem 2.4rem;
-    border: 1px solid red;
-    box-sizing: border-box;
-    border-radius: 2rem;
-    bottom: 1.5rem;
-}
-
-.car-2 a:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-}
-
-.car-3 {
-    background-image: url('https://cars-website-yt.netlify.app/images/pic-3.png');
-    background-size: cover;
-    height: 23rem;
-    width: 20rem;
-    padding: 1.5rem 2.5rem;
-    box-sizing: border-box;
-    position: relative;
-    border: 0.1rem solid red;
-    border-radius: 1rem;
-    transition: all 0.3s ease-in;
-}
-
-.car-3:hover {
-    transform: translateY(-1rem);
-    border: 0.1rem solid white;
-}
-
-.car-3 a {
-    position: absolute;
-    --text-color: #000;
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1.2rem 2.4rem;
-    border: 1px solid red;
-    box-sizing: border-box;
-    border-radius: 2rem;
-    bottom: 1.5rem;
-}
-
-.car-3 a:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-}
-
-.car-4 {
-    background-image: url('https://cars-website-yt.netlify.app/images/pic-4.png');
-    background-size: cover;
-    height: 23rem;
-    width: 20rem;
-    padding: 1.5rem 2.5rem;
-    box-sizing: border-box;
-    position: relative;
-    border: 0.1rem solid red;
-    border-radius: 1rem;
-    transition: all 0.3s ease-in;
-}
-
-.car-4:hover {
-    transform: translateY(-1rem);
-    border: 0.1rem solid white;
-}
-
-.car-4 a {
-    position: absolute;
-    --text-color: #000;
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1.2rem 2.4rem;
-    border: 1px solid red;
-    box-sizing: border-box;
-    border-radius: 2rem;
-    bottom: 1.5rem;
-}
-
-.car-4 a:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
+    justify-content: center;
+    text-align: center;
 }
 
 /*article end */
@@ -314,7 +217,7 @@ article {
 /*Responsive start */
 
 
-@media (max-width:1000px) {
+@media (max-width:1173px) {
     html {
         height: 100%;
         margin: auto;
@@ -350,7 +253,7 @@ article {
     article {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 1.8rem;
+        gap: 1.6rem;
         column-gap: 2rem;
         margin: 3rem 3rem;
         justify-content: center;
@@ -358,6 +261,14 @@ article {
 
     .section {
         display: block;
+    }
+
+    .logo-img {
+        width: 15rem;
+        display: flex;
+        margin: auto;
+        margin-bottom: 3rem;
+
     }
 
     .aside {
@@ -375,20 +286,18 @@ article {
         text-align: center;
     }
 
-    .aside button {
-        display: block;
-        width: 40%;
-        margin: auto;
-        font-size: 0.7rem;
-    }
-
 }
 
 @media (max-width:750px) {
     html {
-        background-size: cover;
-        background-repeat: no-repeat;
         height: auto;
+        margin: auto;
+    }
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 
     .container {
@@ -440,11 +349,8 @@ article {
         text-align: center;
     }
 
-    .aside button {
-        display: block;
-        width: 40%;
-        margin: auto;
-        font-size: 0.7rem;
+    .car-1 {
+        margin-bottom: 2rem;
     }
 
 }

@@ -1,2 +1,2 @@
 # Araba Sitesi
-## İçerisinde hmtl ve css bulunan tek sayfalı araba sitesi.
+## İçerisinde hmtl ve css bulunan çok sayfalı araba sitesi.
